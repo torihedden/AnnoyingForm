@@ -23,6 +23,7 @@ function randomY() {
 
 $(".submit-button").click(function() {
 
+
   $(".error-message").show();
 
   randomX();
