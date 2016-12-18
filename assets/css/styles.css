@@ -56,40 +56,47 @@ table {
 	font-weight: bold;
 
 	border-radius: 5px;
+	box-sizing: border-box;
+
 }
 
 .form-content {
 	/*border: solid 2px red;*/
+	width: 50%;
+	margin: 50px auto;
 }
 
 input {
 	border: solid black 2px;
 	padding: 10px;
 	display: block;
-	margin: 10px;
+	margin: 10px 0;
+	width: 100%;
 }
 
-::-webkit-input-placeholder { color: black;}
-::-moz-placeholder { color: black;}
-:-ms-input-placeholder { color: black;}
-:-moz-placeholder {color: black;}
+::-webkit-input-placeholder { color: darkgray;}
+::-moz-placeholder { color: darkgray;}
+:-ms-input-placeholder { color: darkgray;}
+:-moz-placeholder {color: darkgray;}
+
 
 .submit-button {
-	/*border: solid 2px blue;*/
+	/*border: solid 2px green;*/
+	width: 15%;
+	margin: 20px auto;
+}
+
+.random {
 	position: absolute;
-	top: 200px;
-	left: 200px;
 	z-index: 9;
 }
 
 button {
-
+	margin: 0 auto;
 	border: none;
 	height: 50px;
-	width: 150px;
+	width: 100%;
 	color: white;
 	background-color: blue;
 
 }
-
-/* editing to demo for GitHub desktop */

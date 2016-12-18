@@ -1,27 +1,35 @@
 var x;
 var y;
 
-function randomInt() {
+function randomX() {
 
   x = Math.floor((Math.random() * 100)) + 1;
 
-  y = Math.floor((Math.random() * 100)) + 1;
+  if (x >= 80) {
+    randomX();
+  }
 
-  console.log(x, y);
 }
 
-randomInt();
+function randomY() {
 
+  y = Math.floor((Math.random() * 100)) + 1;
 
-$("button").click(function() {
+  if (y >= 90) {
+    randomY();
+  }
 
-  // $(".submit-button").css({"top" : "calc( 100% / 10)"});
-  // $(".submit-button").css({"left" : "calc( 100% / 2 )"});
+}
 
-  $(".submit-button").css({"top" : x + "%"});
-  $(".submit-button").css({"left" : y + "%"});
+$(".submit-button").click(function() {
 
-  randomInt();
+  randomX();
+  randomY();
+
+  $(".submit-button").addClass("random");
+
+  $(".submit-button").css({"left" : x + "%"});
+  $(".submit-button").css({"top" : y + "%"});
 
 });
 
