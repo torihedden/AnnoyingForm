@@ -24,15 +24,24 @@ function randomY() {
 $(".submit-button").click(function() {
 
 
-  $(".error-message").show();
+  if ($($("input")[0]).val() !== "" && $($("input")[1]).val() !== "") {
 
-  randomX();
-  randomY();
+    event.preventDefault();
 
-  $(".submit-button").addClass("random");
+    $(".error-message").show();
 
-  $(".submit-button").css({"left" : x + "%"});
-  $(".submit-button").css({"top" : y + "%"});
+    randomX();
+    randomY();
+
+    $(".submit-button").addClass("random");
+
+    $(".submit-button").css({"left" : x + "%"});
+    $(".submit-button").css({"top" : y + "%"});
+
+  }
+
+
+
 
 });
 

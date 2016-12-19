@@ -117,12 +117,13 @@ button {
 	}
 }
 
+
 .error-message {
 	font-size: 28px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
 
-	width: 25%;
+	width: 60%;
 	margin: 20px auto;
 
 	text-align: center;
