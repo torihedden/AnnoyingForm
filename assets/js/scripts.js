@@ -1,3 +1,12 @@
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+
 var x;
 var y;
 
@@ -40,11 +49,10 @@ $(".submit-button").click(function() {
 
   }
 
-
-
+// Regex for helping to validate email /\w([@])\w+/g
 
 });
 
 
 
-// another form idea: on click submit, erase contents of one random input element, and prompt user
+// another form idea: on click submit, erase contents of one random input element, and prompt user to again please fill out form

@@ -99,7 +99,7 @@ button {
 	height: 50px;
 	width: 100%;
 	color: white;
-	background-color: #00A5CF;
+	background-color: #102B3F;
 
 }
 
@@ -130,4 +130,10 @@ button {
 
 	display: none;
 
+}
+
+.twitter-share-button {
+	position: absolute !important;
+	right: 25px !important;
+	bottom: 25px !important;
 }
